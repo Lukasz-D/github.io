@@ -18,7 +18,8 @@ $(".navbar-collapse ul li a[href^='#']").on('click', function(e) {
 
 });
 
-$("a.navbar-brand[href^='#']").on('click', function(e) {
+
+$("a.navbar-brand[href^='#']" && "#back-to-top a[href^='#']").on('click', function(e) {
 
    // prevent default anchor click behavior
    e.preventDefault();
@@ -37,3 +38,5 @@ $("a.navbar-brand[href^='#']").on('click', function(e) {
      });
 
 });
+
+

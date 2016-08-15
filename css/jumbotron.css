@@ -1,4 +1,9 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+
+* {
+    border: 1px solid black;
+}
+
 body {
   padding-top: 50px;
 
@@ -17,6 +22,17 @@ footer {
     background-color:darkred;
     padding-top: 150px;
     padding-bottom: 30px;
+    position: relative;
+}
+
+#back-to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px
+}
+
+#back-to-top a {
+    color: #333;
 }
 
 .jumbotron {
@@ -35,6 +51,23 @@ footer {
     margin-bottom: 20px; 
     font-weight: 100;
     padding: 0px 50px;
+}
+
+iframe {
+    
+    margin: 30px 0px;
+}
+
+.close {   
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #806262;
+    font-size: 33px;
+    width: 33px;
+    border-radius: 33px;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
 }
 
 ul.nav {
